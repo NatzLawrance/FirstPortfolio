@@ -5,6 +5,7 @@
 
 #gallery {
   background-color: #000000;
+  margin-top: -5px;
 }
 
 section {
@@ -13,8 +14,15 @@ section {
 
 #about {
   background-color: #e00000;
+  margin-top: -5px;
 }
 
 #contact {
   background-color: #e00000;
+  margin-top: -5px;
 }
+
+.footer {
+  margin-top: -5px;
+}
+
