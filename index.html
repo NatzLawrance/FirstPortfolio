@@ -46,10 +46,11 @@
     <!-- Jumbotron -->
 
     <section class="jumbotron text-center text-white bg-gradient">
-      <img src="img/Profile.jpg" alt="FotoProfile" width="200px" class="rounded-circle img-thumbnail" />
-      <h1>Natz Lawrance</h1>
-      <p class="lead">Content Creator | Web Design</p>
-
+      <div class="container-fluid">
+        <img src="img/Profile.jpg" alt="FotoProfile" width="200px" class="rounded-circle img-thumbnail" />
+        <h1>Natz Lawrance</h1>
+        <p class="lead">Content Creator | Web Design</p>
+      </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#e00000"
@@ -64,7 +65,7 @@
     <!-- About -->
 
     <section id="about">
-      <div class="container text-white">
+      <div class="container-fluid text-white">
         <div class="row">
           <div class="col text-center"><h2>About Me !</h2></div>
         </div>
@@ -87,7 +88,7 @@
     <!-- Gallery -->
 
     <section id="gallery">
-      <div class="container text-white">
+      <div class="container-fluid text-white">
         <div class="row text-center">
           <div class="col"><h2>Gallery</h2></div>
         </div>
@@ -149,34 +150,36 @@
     <!-- Contact -->
 
     <section id="contact">
-      <div class="row text-center text-white">
-        <div class="col-mb-5"><h2>Contact Me !</h2></div>
-      </div>
-      <div class="row justify-content-center text-white">
-        <div class="col-md-5">
-          <div class="alert alert-primary alert-dismissible fade show d-none alertku" role="alert">
-            <strong>Terima Kasih!</strong> Pesan anda sudah kami terima.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <div class="container-fluid">
+        <div class="row text-center text-white">
+          <div class="col-mb-5"><h2>Contact Me !</h2></div>
+        </div>
+        <div class="row justify-content-center text-white">
+          <div class="col-md-5">
+            <div class="alert alert-primary alert-dismissible fade show d-none alertku" role="alert">
+              <strong>Terima Kasih!</strong> Pesan anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="NatzLawrance-Contact-Form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control shadow-lg" id="name" aria-describedby="name" name="nama" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control shadow-lg" id="email" aria-describedby="email" name="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control shadow-lg" id="pesan" rows="3" name="pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark shadow-lg btnKirim">Kirim!</button>
+              <button class="btn btn-dark d-none btnLoad" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span role="status">Loading...</span>
+              </button>
+            </form>
           </div>
-          <form name="NatzLawrance-Contact-Form">
-            <div class="mb-3">
-              <label for="name" class="form-label">Nama Lengkap</label>
-              <input type="text" class="form-control shadow-lg" id="name" aria-describedby="name" name="nama" />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control shadow-lg" id="email" aria-describedby="email" name="email" />
-            </div>
-            <div class="mb-3">
-              <label for="pesan" class="form-label">Pesan</label>
-              <textarea class="form-control shadow-lg" id="pesan" rows="3" name="pesan"></textarea>
-            </div>
-            <button type="submit" class="btn btn-dark shadow-lg btnKirim">Kirim!</button>
-            <button class="btn btn-dark d-none btnLoad" type="button" disabled>
-              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-              <span role="status">Loading...</span>
-            </button>
-          </form>
         </div>
       </div>
 
@@ -192,8 +195,8 @@
     <!-- End Contact -->
 
     <!-- Footer -->
-    <footer style="background-color: #000000" class="text-center text-white pb-3">
-      <p>Simple Created By <a href="https://www.youtube.com/@zrs211" class="text-white fw-bold">NATZ</a></p>
+    <footer style="background-color: #000000" class="text-center text-white pb-3 footer">
+      <p>Simple Created By <a href="https://www.youtube.com/@zrs211" class="text-white fw-bold text-decoration-none">NATZ</a></p>
     </footer>
     <!-- End Footer -->
 
